@@ -50,14 +50,13 @@ export class Forms {
 
 		if(this.form_name == 'forms_list'){
 			this.forms = [
-				{ title: 'Page 1',      isUpdated:false, tableName: '', pageName: 'PersonalDetailsPage', point: '0', icon : 'person'},
-				{ title: 'Page 2',      isUpdated:false, tableName: '', pageName: 'ResidenceDetailsPage', point: '0', icon : 'locate'},
-				{ title: 'Page 3',      isUpdated:false, tableName: '', pageName: 'KycKnowledgePage', point: '0', icon : 'book'},
-				{ title: 'Page 4', 	    isUpdated:false, tableName: '', pageName: 'KycPhonePage', point: '0', icon : 'phone-portrait'},
-				{ title: 'Page 5',      isUpdated:false, tableName: '', pageName: 'KycSpousePage', point: '0', icon : 'woman'},
-				{ title: 'Page 6',      isUpdated:false, tableName: '', pageName: 'SpouseKnowledgePage', point: '0', icon : 'book'},
-				{ title: 'Page 7',      isUpdated:false, tableName: '', pageName: 'KycFamilyPage', point: '0', icon : 'people'},
-				{ title: 'Page 8',      isUpdated:false, tableName: '', pageName: 'KycAppliancesPage', point: '0', icon : 'cog'},
+				{ title: 'Primary Data',      isUpdated:false, tableName: '', pageName: 'PrimarydataPage', point: '0', icon : 'person'},
+				{ title: 'Membership',      isUpdated:false, tableName: '', pageName: 'MembershipPage', point: '0', icon : 'locate'},
+				{ title: 'Marketing',      isUpdated:false, tableName: '', pageName: 'MarketingPage', point: '0', icon : 'book'},
+				{ title: 'Money', 	    isUpdated:false, tableName: '', pageName: 'MoneyPage', point: '0', icon : 'phone-portrait'},
+				{ title: 'Management',      isUpdated:false, tableName: '', pageName: 'ManagementPage', point: '0', icon : 'woman'},
+				{ title: 'Services',      isUpdated:false, tableName: '', pageName: 'ServicesPage', point: '0', icon : 'book'},
+				{ title: 'Does farmers has sense of ownership in FPO they are associated with?',      isUpdated:false, tableName: '', pageName: 'AssociateFpoPage', point: '0', icon : 'people'},
 			];
 		}
 		else if(this.form_name == 'rating_tables'){
