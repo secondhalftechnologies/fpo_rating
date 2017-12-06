@@ -35,7 +35,7 @@ import { Sql } from '../providers/sql/sql';
           preloadModules: true
         }),
         IonicStorageModule.forRoot({
-            name: '__agribridgeDb',
+            name: '__fpoRatingDb',
             driverOrder: ['sqlite', 'indexeddb', 'websql']
         })
     ],

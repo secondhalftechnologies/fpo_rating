@@ -8,7 +8,7 @@
     <ion-row>
       <ion-col col-12>
         <div padding>
-            <ion-list>
+            <ion-list *ngIf="form_name=='forms_list'">
               <button ion-item *ngFor="let form of forms" (click)="onTap(form.pageName)" no-lines>
                 <ion-icon name="{{form.icon}}" item-start></ion-icon>
                 {{form.title}}
@@ -16,14 +16,42 @@
                 <ion-icon name="checkmark-circle" color="{{ form.isUpdated ? 'secondary' : 'light'}}" item-end></ion-icon>
               </button>
             </ion-list>
-<!-- 
-            <ion-grid *ngIf="form_name=='Documents'">
-              <ion-row *ngFor="let image of images">
-                <ion-col width-50 *ngFor="let uri of row">
-                  <img [src]="file_uri">
-                </ion-col>
+
+            <ion-grid *ngIf="form_name=='rating_tables'" class="rating-table">
+              <ion-row class="header">
+                <ion-col col-6>Head 1</ion-col>
+                <ion-col col-3>Head 2</ion-col>
+                <ion-col col-3>Head 3</ion-col>
               </ion-row>
-            </ion-grid> -->
+
+              <ion-row>
+                <ion-col col-6>col 1</ion-col>
+                <ion-col col-3>col 2</ion-col>
+                <ion-col col-3>col 3</ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col col-6>col 1</ion-col>
+                <ion-col col-3>col 2</ion-col>
+                <ion-col col-3>col 3</ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col col-6>col 1</ion-col>
+                <ion-col col-3>col 2</ion-col>
+                <ion-col col-3>col 3</ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col col-6>col 1</ion-col>
+                <ion-col col-3>col 2</ion-col>
+                <ion-col col-3>col 3</ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col col-6>col 1</ion-col>
+                <ion-col col-3>col 2</ion-col>
+                <ion-col col-3>col 3</ion-col>
+              </ion-row>
+
+            </ion-grid>
+
         </div>
       </ion-col>
     </ion-row>

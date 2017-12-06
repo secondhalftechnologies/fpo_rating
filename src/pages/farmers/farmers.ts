@@ -83,7 +83,7 @@ export class FarmersPage {
 			let alert = this.alertCtrl.create({
                 title: 'Delete',
                 subTitle: 'This action cant\'t be undo!',
-                message: 'Do you really want to delete "' + farmer.fm_name + '" from your farmer list?',
+                message: 'Do you really want to delete "' + farmer.fm_name + '" from your FPO list?',
                 buttons: [
                 {
                     text: 'No',

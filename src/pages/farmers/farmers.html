@@ -3,7 +3,7 @@
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>Farmers</ion-title>
+        <ion-title>FPOs</ion-title>
     </ion-navbar>
     <ion-toolbar color="app">
         <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
@@ -11,7 +11,7 @@
 </ion-header>
 <ion-content class="list-avatar-page">
     <ion-list *ngIf="!retryButton">
-        <ion-list-header>Your Farmers</ion-list-header>
+        <ion-list-header>Your FPOs</ion-list-header>
         <ion-item-sliding *ngFor="let farmer of items">
             <ion-item (click)="itemTapped($event, farmer)">
                 <ion-avatar item-start>
@@ -40,9 +40,9 @@
     </ion-fab>
 
     <div *ngIf="infinit_complete && items.length > 0" class="no-more-item">
-        <h6>No more farmers available.</h6>
+        <h6>No more FPOs available.</h6>
         <div>
-            <button ion-button outline small color="app" (click)="goto('AddFarmerPage')">Add Farmer</button>
+            <button ion-button outline small color="app" (click)="goto('AddFarmerPage')">Add FPO</button>
         </div>
     </div>
     <!-- ionic infinite loading -->
@@ -55,9 +55,9 @@
     <!-- message on empty list -->
     <div *ngIf="items.length < 1" class="no-farmers">
         <img src="assets/images/farmer_list_placeholder.png">
-        <h6>No farmers found!</h6>
+        <h6>No FPOs found!</h6>
         <div>
-            <button ion-button color="app" (click)="goto('AddFarmerPage')">Add Farmer</button>
+            <button ion-button color="app" (click)="goto('AddFarmerPage')">Add FPO</button>
         </div>
     </div>
     

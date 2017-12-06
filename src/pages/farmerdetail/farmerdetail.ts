@@ -21,10 +21,6 @@ export class Farmerdetail {
 
 	page1: any = 'Forms';
 	page2: any = 'Forms';
-	page3: any = 'Forms';
-	page4: any = 'Forms';
-	page5: any = 'Forms';
-	page6: any = 'Forms';
 
 	showIcons: boolean  = false;
 	showTitles: boolean = true;
@@ -33,20 +29,12 @@ export class Farmerdetail {
 	current_farmer: any;
 	parmsPage1: any;
 	parmsPage2: any;
-	parmsPage3: any;
-	parmsPage4: any;
-	parmsPage5: any;
-	parmsPage6: any;
 
 	constructor(public navCtrl: NavController, private navParams: NavParams, private superTabsCtrl: SuperTabsController) {
 		this.current_farmer = navParams.get('farmer');
 		this.pageTitle      = this.current_farmer.fm_name;
-		this.parmsPage1     = {rootNavCtrl: this.navCtrl ,farmer: this.current_farmer, form_name : 'kyc' };
-		this.parmsPage2     = {rootNavCtrl: this.navCtrl ,farmer: this.current_farmer, form_name : 'land details' };
-		this.parmsPage3     = {rootNavCtrl: this.navCtrl ,farmer: this.current_farmer, form_name : 'crop details' };
-		this.parmsPage4     = {rootNavCtrl: this.navCtrl ,farmer: this.current_farmer, form_name : 'assets' };
-		this.parmsPage5     = {rootNavCtrl: this.navCtrl ,farmer: this.current_farmer, form_name : 'loan and liability' };
-		this.parmsPage6     = {rootNavCtrl: this.navCtrl ,farmer: this.current_farmer, form_name : 'Documents' };
+		this.parmsPage1     = {rootNavCtrl: this.navCtrl ,farmer: this.current_farmer, form_name : 'forms_list' };
+		this.parmsPage2     = {rootNavCtrl: this.navCtrl ,farmer: this.current_farmer, form_name : 'rating_tables' };
 	}
 
 	ngAfterViewInit() {

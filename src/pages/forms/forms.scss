@@ -4,5 +4,27 @@ page-forms{
 	.item-block{
 		min-height: 7.4rem;
 	}
+
+	.rating-table{
+		border: 1px solid #ccc;
+		padding: 0px;
+		text-align: center;
+		ion-row{
+			border-bottom: 1px solid #efefef;
+			margin-top: 13px;
+			ion-col:first-child {
+			    text-align: left;
+			}
+		}
+	}
+
+	ion-row.header{
+		ion-col{
+			text-align: center;
+		}
+		text-transform: uppercase;
+		font-weight: bold;
+		border-bottom: 1px solid #ccc;
+	}
 }
 

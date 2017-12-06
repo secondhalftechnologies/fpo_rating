@@ -48,41 +48,19 @@ export class Forms {
 			'item5' : '50',
 		};
 
-		if(this.form_name == 'kyc'){
+		if(this.form_name == 'forms_list'){
 			this.forms = [
-				{ title: 'Applicant\'s Personal Details',   isUpdated:false, tableName: 'tbl_personal_detail', pageName: 'PersonalDetailsPage', point: '0', icon : 'person'},
-				{ title: 'Residence Status & Details',      isUpdated:false, tableName: 'tbl_residence_details', pageName: 'ResidenceDetailsPage', point: '0', icon : 'locate'},
-				{ title: 'Applicant\'s Knowledge',     		isUpdated:false, tableName: 'tbl_applicant_knowledge', pageName: 'KycKnowledgePage', point: '0', icon : 'book'},
-				{ title: 'Applicant\'s Phone Details', 		isUpdated:false, tableName: 'tbl_applicant_phone', pageName: 'KycPhonePage', point: '0', icon : 'phone-portrait'},
-				{ title: 'Spouse Details',             		isUpdated:false, tableName: 'tbl_spouse_details', pageName: 'KycSpousePage', point: '0', icon : 'woman'},
-				{ title: 'Spouse\'s Knowledge',             isUpdated:false, tableName: 'tbl_spouse_knowledge', pageName: 'SpouseKnowledgePage', point: '0', icon : 'book'},
-				{ title: 'Family Details',             		isUpdated:false, tableName: 'tbl_family_details', pageName: 'KycFamilyPage', point: '0', icon : 'people'},
-				{ title: 'Appliances Motors',          		isUpdated:false, tableName: 'tbl_appliances_details', pageName: 'KycAppliancesPage', point: '0', icon : 'cog'},
+				{ title: 'Page 1',      isUpdated:false, tableName: '', pageName: 'PersonalDetailsPage', point: '0', icon : 'person'},
+				{ title: 'Page 2',      isUpdated:false, tableName: '', pageName: 'ResidenceDetailsPage', point: '0', icon : 'locate'},
+				{ title: 'Page 3',      isUpdated:false, tableName: '', pageName: 'KycKnowledgePage', point: '0', icon : 'book'},
+				{ title: 'Page 4', 	    isUpdated:false, tableName: '', pageName: 'KycPhonePage', point: '0', icon : 'phone-portrait'},
+				{ title: 'Page 5',      isUpdated:false, tableName: '', pageName: 'KycSpousePage', point: '0', icon : 'woman'},
+				{ title: 'Page 6',      isUpdated:false, tableName: '', pageName: 'SpouseKnowledgePage', point: '0', icon : 'book'},
+				{ title: 'Page 7',      isUpdated:false, tableName: '', pageName: 'KycFamilyPage', point: '0', icon : 'people'},
+				{ title: 'Page 8',      isUpdated:false, tableName: '', pageName: 'KycAppliancesPage', point: '0', icon : 'cog'},
 			];
 		}
-		else if(this.form_name == 'land details'){
-			this.forms = [
-				{ title: 'Farm Land Details',  isUpdated:false, tableName: 'tbl_land_details', pageName: 'LandFarmPage', point: '0', icon : 'locate'},
-			];
-		}
-		else if(this.form_name == 'crop details'){
-			this.forms = [
-				{ title: 'Crop And Cultivation Details',  isUpdated:false, tableName: '', pageName: 'CropCultivationPage', point: '0', icon : 'leaf'},
-				{ title: 'Previous Crop Cycle Details',   isUpdated:false, tableName: '', pageName: 'CropPreviousPage', point: '0', icon : 'leaf'},
-			];
-		}
-		else if(this.form_name == 'assets'){
-			this.forms = [
-				{ title: 'Assets Details',  isUpdated:false, tableName: '', pageName: 'AssetsDetailsPage', point: '0', icon : 'arrow-round-forward'},
-				{ title: 'Live Stock',      isUpdated:false, tableName: '', pageName: 'AssetsStockPage',   point: '0', icon : 'arrow-round-forward'},
-			];
-		}
-		else if(this.form_name == 'loan and liability'){
-			this.forms = [
-				{ title: 'Financial Details',     isUpdated:false, tableName: '', pageName: '', point: '0', icon : 'cash'},
-			];
-		}
-		else if(this.form_name == 'Documents'){
+		else if(this.form_name == 'rating_tables'){
 			this.forms = [];
 		}
 	}

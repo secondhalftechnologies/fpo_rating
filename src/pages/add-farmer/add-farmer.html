@@ -1,12 +1,12 @@
 <!--
-  Generated template for the AddFarmerPage page.
+  Generated template for the AddFPOPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
 <ion-header>
 	<ion-navbar color="app">
-		<ion-title>Add Farmer</ion-title>
+		<ion-title>Add FPO</ion-title>
 	</ion-navbar>
 </ion-header>
 <ion-content>
@@ -15,52 +15,112 @@
 			<!-- <ion-item-divider color="light">Personal Information</ion-item-divider> -->
 			<div padding>
 				<ion-item>
-					<ion-label floating>First Name</ion-label>
+					<ion-label floating>Name of FPO</ion-label>
 					<ion-input formControlName="fm_fname" type="text"></ion-input>
 				</ion-item>
-				<div *ngIf="!personal.controls.fm_fname.valid  && (personal.controls.fm_fname.dirty || submitAttempt)">
-					<p *ngIf="personal.controls.fm_fname.errors.required">Please enter a valid name.</p>
-					<p *ngIf="personal.controls.fm_fname.errors.maxlength">Length shoud be equal to or smaller than {{personal.controls.fm_fname.errors.maxlength.requiredLength}}</p>
-				</div>
 
 				<ion-item>
-					<ion-label floating>Middle Name</ion-label>
-					<ion-input formControlName="fm_mname" type="text"></ion-input>
+					<ion-label floating>District / location</ion-label>
+					<ion-select formControlName="fm_fname" interface="popover">
+						<ion-option value="yes">District 1</ion-option>
+						<ion-option value="yes">District 2</ion-option>
+						<ion-option value="yes">District 3</ion-option>
+						<ion-option value="yes">District 4</ion-option>
+						<ion-option value="yes">District 5</ion-option>
+					</ion-select>
 				</ion-item>
-				<div *ngIf="!personal.controls.fm_mname.valid  && (personal.controls.fm_mname.dirty || submitAttempt)">
-					<p *ngIf="personal.controls.fm_mname.errors.required">Please enter a valid name.</p>
-					<p *ngIf="personal.controls.fm_mname.errors.maxlength">Length shoud be equal to or smaller than {{personal.controls.fm_mname.errors.maxlength.requiredLength}}</p>
-				</div>
 
 				<ion-item>
-					<ion-label floating>Last Name</ion-label>
-					<ion-input formControlName="fm_lname" type="text"></ion-input>
-				</ion-item>
-				<div *ngIf="!personal.controls.fm_lname.valid  && (personal.controls.fm_lname.dirty || submitAttempt)">
-					<p *ngIf="personal.controls.fm_lname.errors.required">Please enter a valid name.</p>
-					<p *ngIf="personal.controls.fm_lname.errors.maxlength">Length shoud be equal to or smaller than {{personal.controls.fm_lname.errors.maxlength.requiredLength}}</p>
-				</div>
-
-
-				<!-- <ion-item>
-					<ion-label floating>Mobile no.</ion-label>
-					<ion-input formControlName="fm_mobileno" type="tel" mask='9999-999-999'></ion-input>
-				</ion-item> -->
-				<ion-item>
-					<ion-label floating>Mobile no.</ion-label>
+					<ion-label floating>No. of village covered</ion-label>
 					<ion-input formControlName="fm_mobileno" type="tel"></ion-input>
 				</ion-item>
-				<div *ngIf="!personal.controls.fm_mobileno.valid  && (personal.controls.fm_mobileno.dirty || submitAttempt)">
-					<p>Please enter a 10 digit valid mobile no.</p>
-				</div>
 
 				<ion-item>
-					<ion-label floating>Aadhaar no.</ion-label>
-					<ion-input formControlName="fm_aadhar" type="number"></ion-input>
+					<ion-label floating>Collect names of participating members</ion-label>
+					<ion-select formControlName="fm_fname" interface="popover">
+						<ion-option value="yes">Yes</ion-option>
+						<ion-option value="no">No</ion-option>
+					</ion-select>
 				</ion-item>
-				<div *ngIf="!personal.controls.fm_aadhar.valid  && (personal.controls.fm_aadhar.dirty || submitAttempt)">
-					<p>Please enter a 12 digit valid Aadhar no.</p>
-				</div>
+
+				<ion-item>
+					<ion-label floating>Year FPO was formed</ion-label>
+					<ion-datetime displayFormat="YYYY" pickerFormat="YYYY" formControlName="fm_aadhar"></ion-datetime>
+				</ion-item>
+
+				<ion-item>
+					<ion-label floating>Number of members at forming (Male)</ion-label>
+					<ion-input formControlName="fm_mobileno" type="tel"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label floating>Number of members at forming (Female)</ion-label>
+					<ion-input formControlName="fm_mobileno" type="tel"></ion-input>
+				</ion-item>
+<!-- 				<ion-item>
+					<ion-label floating>Number of members at forming (Total)</ion-label>
+					<ion-input formControlName="fm_mobileno" type="tel"></ion-input>
+				</ion-item> -->
+
+				<ion-item>
+					<ion-label floating>Number of members today (Male)</ion-label>
+					<ion-input formControlName="fm_mobileno" type="tel"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label floating>Number of members today (Female)</ion-label>
+					<ion-input formControlName="fm_mobileno" type="tel"></ion-input>
+				</ion-item>
+
+
+				<ion-item>
+					<ion-label floating>Total annual sales for the most recent year </ion-label>
+					<ion-input formControlName="fm_mobileno" type="tel"></ion-input>
+				</ion-item>
+
+				<ion-item>
+					<ion-label floating>List of trainings that have been provided to or by the FPO</ion-label>
+					<ion-input formControlName="fm_mobileno" type="tel"></ion-input>
+				</ion-item>
+
+				<ion-item>
+					<ion-label floating>Firm</ion-label>
+					<ion-input formControlName="fm_mobileno" type="tel"></ion-input>
+				</ion-item>
+
+				<ion-item>
+					<ion-label floating>Year </ion-label>
+					<ion-datetime displayFormat="YYYY" pickerFormat="YYYY" formControlName="fm_aadhar"></ion-datetime>
+				</ion-item>
+
+				<ion-item>
+					<ion-label floating>No of Attendees</ion-label>
+					<ion-input formControlName="fm_mobileno" type="tel"></ion-input>
+				</ion-item>
+
+				<ion-item>
+					<ion-label floating>Adoptions/ New learning</ion-label>
+					<ion-input formControlName="fm_mobileno" type="tel"></ion-input>
+				</ion-item>
+
+
+				<ion-item>
+					<ion-label floating>When was the last board meeting (month & year)? </ion-label>
+					<ion-datetime displayFormat="MM/YYYY" pickerFormat="MM YYYY" formControlName="fm_aadhar"></ion-datetime>
+				</ion-item>
+
+				<ion-item>
+					<ion-label floating>When was the last general assembly meeting (month & year)? </ion-label>
+					<ion-datetime displayFormat="MM/YYYY" pickerFormat="MM YYYY" formControlName="fm_aadhar"></ion-datetime>
+				</ion-item>
+
+				<ion-item>
+					<ion-label floating>When was the last collective sale (month & year)? </ion-label>
+					<ion-datetime displayFormat="MM/YYYY" pickerFormat="MM YYYY" formControlName="fm_aadhar"></ion-datetime>
+				</ion-item>
+
+				<ion-item>
+					<ion-label floating>If there is a collective warehouse, what is the capacity (MT)? </ion-label>
+					<ion-datetime displayFormat="MM/YYYY" pickerFormat="MM YYYY" formControlName="fm_aadhar"></ion-datetime>
+				</ion-item>
 				
 			</div>
 		</ion-list>
