@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="app">
     <ion-title>Management</ion-title>
   </ion-navbar>
 
@@ -14,5 +14,75 @@
 
 
 <ion-content padding>
+	<ion-list>
+		<div padding>
+			<ion-item>
+				<ion-label floating>Legal status </ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">The FPO has not applied for registration</ion-option>
+					<ion-option value="2">The FPO is not legally registered, but has already applied for registration </ion-option>
+					<ion-option value="3">The FPO is legally registered (Less than a year before) </ion-option>
+					<ion-option value="4">The FPO is legally registered (More than 1 year) and receives training, advisory services or other assistance from the POPI.</ion-option>
+				</ion-select>
+			</ion-item>
 
+			<ion-item>
+				<ion-label floating>Bylaws</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">There are no bylaws. </ion-option>
+					<ion-option value="2">There are bylaws, but they are simply a copy of government mandated bylaws or written to meet minimum government standards and are without consensus of group members/BoD.</ion-option>
+					<ion-option value="3">There are bylaws that have been written to describe the mission of the FPO, election protocols, and membership rights and that have been adapted to serve the needs of the FPO with consensus of members/BoDs but no mechanism to enforce it. </ion-option>
+					<ion-option value="4">There are bylaws that have been written to describe the mission of the FPO, election protocols and membership rights and have been adapted to serve the needs of the FPO with consensus of members/BoDs with proper mechanism to examine and penalise the non-followers. </ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Board of directors (BOD) </ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">There is no officially recognized BOD; the FPO is run by a community leader(s). </ion-option>
+					<ion-option value="2">There is a BOD, but its roles and responsibilities are not clearly defined. </ion-option>
+					<ion-option value="3">There is a BOD with clearly defined governing roles and responsibilities, but they make a significant number of operational decisions. </ion-option>
+					<ion-option value="4">There is a BOD that acts within clearly defined governing roles and responsibilities, and they have received some form of training or conducted an assessment (self or external) in the last two years.</ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Election of board of directors</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">The BOD was not elected and they have been in place beyond the terms specified in the bylaws; or, there are no bylaws to specify length of term. </ion-option>
+					<ion-option value="2">The BOD was elected by members and according to bylaws, but they have been in position beyond the stated term or term limit. </ion-option>
+					<ion-option value="3">The BOD was elected by members and according to bylaws, and they have not exceeded the stated term or term limits. </ion-option>
+					<ion-option value="4">The BOD was elected by members and according to bylaws without exceeding terms or term limits; members have an opportunity to nominate BOD candidates and the BOD has adequate regional/gender representation of the membership</ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Decision making process</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">Decisions are externally imposed by POPI/NABARD</ion-option>
+					<ion-option value="2">Decision taken by CEO without informing anyone</ion-option>
+					<ion-option value="3">CEO decides and inform BoD</ion-option>
+					<ion-option value="4">Decision taken with active participation of members and CEO</ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>dddd</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1"></ion-option>
+					<ion-option value="2"></ion-option>
+					<ion-option value="3"></ion-option>
+					<ion-option value="4"></ion-option>
+				</ion-select>
+			</ion-item>
+			
+		</div>
+
+	</ion-list>
+	
+	<ion-fab top right edge>
+		<button color="secondary" ion-fab>
+			<ion-icon name="checkmark"></ion-icon>
+		</button>
+	</ion-fab>
 </ion-content>

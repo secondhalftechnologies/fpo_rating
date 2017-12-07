@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="app">
     <ion-title>Services</ion-title>
   </ion-navbar>
 
@@ -14,5 +14,67 @@
 
 
 <ion-content padding>
+		<ion-list>
+		<div padding>
 
+			<ion-item>
+				<ion-label floating>Financial Services/Credit</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">FPO has not provided any facilitation to member for getting loans</ion-option>
+					<ion-option value="2">FPO does not know how to get loan for member</ion-option>
+					<ion-option value="3">FPO is trying to help member in getting loan</ion-option>
+					<ion-option value="4">FPO has helped member farmers in getting loans for one or other services</ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Input Supply</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">No physical input provided from FPO to member farmers</ion-option>
+					<ion-option value="2">FPO is planning to provide physical input to member farmers</ion-option>
+					<ion-option value="3">Physical inputs Bought and distributed by FPO to member farmers</ion-option>
+					<ion-option value="4">Physical inputs are prepared (Verme-compost, bio-pesticides etc.) and Distributed by FPO and then supplied with a marginal service charges</ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Advisory Services</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">No such assistance provided</ion-option>
+					<ion-option value="2">Assistance provided only if requested by group</ion-option>
+					<ion-option value="3">Planning to provide assistance in short time/just started</ion-option>
+					<ion-option value="4">Provides timely assistance to Member / Agronomy</ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Crop Insurance</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">Not aware of any measures</ion-option>
+					<ion-option value="2">FPO has shared physical measures to member but don't know any financial measures</ion-option>
+					<ion-option value="3">Has shared physical measures but did not share financial measures</ion-option>
+					<ion-option value="4">Explained how to mitigate risk through physical as well as financial measures</ion-option>
+				</ion-select>
+			</ion-item>
+
+			
+			<ion-item>
+				<ion-label floating>Backward Linkages</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">Not Bothered about Routing Fixed Channels Between member Farmers and FPO for Procuring Goods</ion-option>
+					<ion-option value="2">Wants to make proper channel between member farmer and FPO but doesn't know how to proceed</ion-option>
+					<ion-option value="3">Partially developed a backward linkage but not adhered to it</ion-option>
+					<ion-option value="4">Fully developed a fixed channel for procuring different commodities from different member farmers as per the speciality of farmer by analysing the data collected from member farmers</ion-option>
+				</ion-select>
+			</ion-item>
+			
+		</div>
+
+	</ion-list>
+	
+	<ion-fab top right edge>
+		<button color="secondary" ion-fab>
+			<ion-icon name="checkmark"></ion-icon>
+		</button>
+	</ion-fab>
 </ion-content>

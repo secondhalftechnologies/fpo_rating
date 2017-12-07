@@ -6,13 +6,113 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>primarydata</ion-title>
+  <ion-navbar color="app">
+    <ion-title>Primary Data</ion-title>
   </ion-navbar>
 
 </ion-header>
 
+<ion-content>
 
-<ion-content padding>
+	<ion-list >
+		<div padding>
+			<ion-item>
+				<ion-label floating>Major Community</ion-label>
+				<ion-select interface="popover">
+					<ion-option value="General">General</ion-option>
+					<ion-option value="OBC">OBC</ion-option>
+					<ion-option value="SC">SC</ion-option>
+					<ion-option value="ST">ST</ion-option>
+				</ion-select>
+			</ion-item>
 
+			<ion-item>
+				<ion-label floating>Average land holding of farmers in the covered area</ion-label>
+				<ion-select interface="popover">
+					<ion-option value="0.25">0.25</ion-option>
+					<ion-option value="0.5">0.5</ion-option>
+					<ion-option value="0.75">0.75</ion-option>
+					<ion-option value="1.5">1.5</ion-option>
+					<ion-option value="2">2</ion-option>
+					<ion-option value="2.5">2.5</ion-option>
+					<ion-option value="3">3</ion-option>
+					<ion-option value="3.5">3.5</ion-option>
+					<ion-option value="4">4</ion-option>
+					<ion-option value="4.5">4.5</ion-option>
+					<ion-option value="5">5</ion-option>
+					<ion-option value="5.5">5.5</ion-option>
+					<ion-option value="6">6</ion-option>
+					<ion-option value="6.5">6.5</ion-option>
+					<ion-option value="7">7</ion-option>
+					<ion-option value="7.5">7.5</ion-option>
+					<ion-option value="8">8</ion-option>
+					<ion-option value="8.5">8.5</ion-option>
+					<ion-option value="9">9</ion-option>
+					<ion-option value="9.5">9.5</ion-option>
+					<ion-option value="10">10</ion-option>
+				</ion-select>
+			</ion-item>
+		</div>
+		<ion-item-divider color="light">Major crops</ion-item-divider>
+		<div padding>
+			<ion-item>
+				<ion-label floating>Rabi crops</ion-label>
+				<ion-select interface="popover">
+					<ion-option value="Rabi Crop 1">Rabi Crop 1</ion-option>
+					<ion-option value="Rabi Crop 2">Rabi Crop 2</ion-option>
+					<ion-option value="Rabi Crop 3">Rabi Crop 3</ion-option>
+					<ion-option value="Rabi Crop 4">Rabi Crop 4</ion-option>
+					<ion-option value="Rabi Crop 5">Rabi Crop 5</ion-option>
+					<ion-option value="Rabi Crop 6">Rabi Crop 6</ion-option>
+					<ion-option value="Rabi Crop 7">Rabi Crop 7</ion-option>
+					<ion-option value="Rabi Crop 8">Rabi Crop 8</ion-option>
+					<ion-option value="Rabi Crop 9">Rabi Crop 9</ion-option>
+					<ion-option value="Rabi Crop 10">Rabi Crop 10</ion-option>
+				</ion-select>
+			</ion-item>
+			<ion-item>
+				<ion-label floating>Productivity(Rabi)</ion-label>
+				<ion-input></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Kharif crops</ion-label>
+				<ion-select interface="popover">
+					<ion-option value="Kharif Crop 1">Kharif Crop 1</ion-option>
+					<ion-option value="Kharif Crop 2">Kharif Crop 2</ion-option>
+					<ion-option value="Kharif Crop 3">Kharif Crop 3</ion-option>
+					<ion-option value="Kharif Crop 4">Kharif Crop 4</ion-option>
+					<ion-option value="Kharif Crop 5">Kharif Crop 5</ion-option>
+					<ion-option value="Kharif Crop 6">Kharif Crop 6</ion-option>
+					<ion-option value="Kharif Crop 7">Kharif Crop 7</ion-option>
+					<ion-option value="Kharif Crop 8">Kharif Crop 8</ion-option>
+					<ion-option value="Kharif Crop 9">Kharif Crop 9</ion-option>
+					<ion-option value="Kharif Crop 10">Kharif Crop 10</ion-option>
+				</ion-select>
+			</ion-item>
+			<ion-item>
+				<ion-label floating>Productivity(Kharif)</ion-label>
+				<ion-input></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Irrigation facility</ion-label>
+				<ion-select interface="popover">
+					<ion-option value="Arid">Arid</ion-option>
+					<ion-option value="Semi-Arid">Semi-Arid</ion-option>
+					<ion-option value="Rain">Rain</ion-option>
+					<ion-option value="Canal">Canal</ion-option>
+					<ion-option value="Ground">Ground</ion-option>
+					<ion-option value="Water">Water</ion-option>
+					<ion-option value="River">River</ion-option>
+				</ion-select>
+			</ion-item>
+		</div>
+	</ion-list>
+	
+	<ion-fab top right edge>
+		<button color="secondary" ion-fab>
+			<ion-icon name="checkmark"></ion-icon>
+		</button>
+	</ion-fab>
 </ion-content>

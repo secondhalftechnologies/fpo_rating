@@ -1,3 +1,11 @@
 page-associate-fpo {
-
+	.action-sheet-button{
+		padding: 20px 16px !important;
+	}
+	
+	ion-select{
+		.select-text{
+			white-space: normal;
+		}
+	}
 }

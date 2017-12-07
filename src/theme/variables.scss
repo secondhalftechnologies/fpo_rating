@@ -47,6 +47,7 @@ $colors: (
 
 $border-color: #ccc;
 
+
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
@@ -56,7 +57,7 @@ $border-color: #ccc;
 
 // App Material Design Variables
 // --------------------------------------------------
-// Material Design only Sass variables can go here
+$alert-md-button-text-color: color($colors, app);
 
 
 
@@ -91,3 +92,5 @@ $border-color: #ccc;
 
 @import "roboto";
 @import "noto-sans";
+
+

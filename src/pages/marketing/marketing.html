@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="app">
     <ion-title>Marketing</ion-title>
   </ion-navbar>
 
@@ -14,5 +14,74 @@
 
 
 <ion-content padding>
+	<ion-list>
+		<div padding>
+			<ion-item>
+				<ion-label floating>Marketing Services</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">Org. has no role in marketing member</ion-option>
+					<ion-option value="2">Org. Guides the members for marketing but does not take responsibility of marketing of Shoulder</ion-option>
+					<ion-option value="3">Org. take the responsibility for sale but does not refer to rates before selling at the markets</ion-option>
+					<ion-option value="4">Org. procures the produce from member and Always refers to the rates at different markets by app//website/platform before selling the commodity</ion-option>
+				</ion-select>
+			</ion-item>
 
+			<ion-item>
+				<ion-label floating>Participation</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">Few members (less than 10 percent) sell through the FPO, and those that do participate sell less than half of their surplus through the FPO. </ion-option>
+					<ion-option value="2">A majority of members (more than 50 percent) sell through the FPO, but those that do participate sell less than half of their surplus through the FPO. </ion-option>
+					<ion-option value="3">A majority of members (more than 50 percent) sell through the FPO, and they sell at least half of their surplus through the FPO. </ion-option>
+					<ion-option value="4">Nearly all members (more than 90 percent) sell through the FPO, and they sell at least half of their surplus through the FPO.</ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Buyers </ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">There are no contracts or letters of commitment from any buyers. </ion-option>
+					<ion-option value="2">There is at least one contract, but more than 60 percent of sales is to a single buyer. </ion-option>
+					<ion-option value="3">There is at least one contract, and there are at least three buyers with no more than 40 percent going to a single buyer. </ion-option>
+					<ion-option value="4">There is at least one contract, and there are at least three buyers with no more than 40 percent going to a single buyer. At least one contract has been negotiated to address terms other than value and volume to the benefit of the FPO.</ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Quality</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">There is no quality inspection program conducted by the FPO. </ion-option>
+					<ion-option value="2">There is minimal inspection by the FPO of incoming product, and the FPO sells product at the lowest quality level. </ion-option>
+					<ion-option value="3">The FPO has documented quality standards by which they inspect incoming product, and the product meets a higher quality standard as defined by the market or buyer. </ion-option>
+					<ion-option value="4">The FPO has documented quality standards by which they inspect incoming product, and the product meets a higher quality standard as defined by the market or buyer. The FPO actively informs or trains members on these quality standards prior to the planting and/or harvest season. </ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Storage </ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">There is no storage facility available (owned or rented) to the FPO. </ion-option>
+					<ion-option value="2">There is a storage facility available to the FPO, but it is too small to meet current volume. </ion-option>
+					<ion-option value="3">There is a storage facility available to the FPO and it is of adequate size, but the storage facility is not able to hold product long‐term (more than 30 days) without loss of quality or theft. </ion-option>
+					<ion-option value="4">There is a storage facility available to the FPO and it is adequate. The storage facility is also able to hold product long‐term without loss of quality or theft</ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Use of Infrastructure </ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">Never used</ion-option>
+					<ion-option value="2">rarely/once in a while used</ion-option>
+					<ion-option value="3">Regularly used but no fully capacity utilization</ion-option>
+					<ion-option value="4">Regularly used with full capital utilization</ion-option>
+				</ion-select>
+			</ion-item>
+		</div>
+
+	</ion-list>
+	
+	<ion-fab top right edge>
+		<button color="secondary" ion-fab>
+			<ion-icon name="checkmark"></ion-icon>
+		</button>
+	</ion-fab>
 </ion-content>

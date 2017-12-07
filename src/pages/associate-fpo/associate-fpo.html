@@ -6,13 +6,74 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>AssociateFPO</ion-title>
+  <ion-navbar color="app">
+    <ion-title>Associate FPO</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+	<ion-list>
+		<div padding>
 
+			<ion-item>
+				<ion-label floating>Why you joined the FPO?</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">On someones recommendation but without any motive</ion-option>
+					<ion-option value="2">voluntarily but without any motive</ion-option>
+					<ion-option value="3">On someones recommendation but having clear motive in mind</ion-option>
+					<ion-option value="4">Voluntarily and having clear motive in mind</ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>What do you know about FPO?</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">No knowledge about FPO</ion-option>
+					<ion-option value="2">Basic knowledge</ion-option>
+					<ion-option value="3">Knows about his rights and functioning of FPO</ion-option>
+					<ion-option value="4">Knows how FPO can benefit its members</ion-option>
+				</ion-select>
+			</ion-item>
+			
+			<ion-item>
+				<ion-label floating>What benefit you see by joining FPO?</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">It’s fraud</ion-option>
+					<ion-option value="2">Clueless</ion-option>
+					<ion-option value="3">see no benefits</ion-option>
+					<ion-option value="4">Cheaper/timely inputs, better price for produce, timely market information</ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Where do you see FPO after 5 years?</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">Clueless</ion-option>
+					<ion-option value="2">Don’t know</ion-option>
+					<ion-option value="3">Having vague picture in mind</ion-option>
+					<ion-option value="4">having clear picture in mind</ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>How can you contribute to success of FPO?</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">it’s not my duty</ion-option>
+					<ion-option value="2">Don’t know</ion-option>
+					<ion-option value="3">By doing business with FPO</ion-option>
+					<ion-option value="4">By doing business with FPO, by encouraging others to join FPO and by actively participating in decision making process</ion-option>
+				</ion-select>
+			</ion-item>
+
+		</div>
+
+	</ion-list>
+	
+	<ion-fab top right edge>
+		<button color="secondary" ion-fab>
+			<ion-icon name="checkmark"></ion-icon>
+		</button>
+	</ion-fab>
 </ion-content>

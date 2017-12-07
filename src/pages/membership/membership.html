@@ -6,13 +6,85 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="app">
     <ion-title>Membership</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+	<ion-list >
+		<div padding>
+			<ion-item>
+				<ion-label floating>Recruitment</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">There is no formal membership campaign or any informal efforts to attract new members (i.e., potential members approach the FPO to initiate joining).</ion-option>
+					<ion-option value="2">There is no formal membership campaign, but members are encouraged to attract new members although there is no formal referral process. </ion-option>
+					<ion-option value="3">There has been at least one attempt in the last two years to conduct a membership campaign. </ion-option>
+					<ion-option value="4">There is a clearly articulated membership campaign with annual activities or promotional materials that target both men and women; members receive recognition for bringing in new members. </ion-option>
+				</ion-select>
+			</ion-item>
 
+			<ion-item>
+				<ion-label floating>Retention</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">There are no accurate records of members or member activity; or, 50 percent of members left the FPO or did not participate in the last year. </ion-option>
+					<ion-option value="2">There are accurate records of members and member activity, but membership participation of existing members has declined for each of the last three years. </ion-option>
+					<ion-option value="3">There are accurate records of members and member activity, but membership participation of existing members has been flat (within 5 percent up or down, cumulative) for the last three years. </ion-option>
+					<ion-option value="4">There are accurate records of members and member activity, and membership participation of existing members has increased by more than 5 percent for each of the last three years. </ion-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Annual General Meetings (AGM)</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">There has not been an AGM in the last two years. </ion-option>
+					<ion-option value="2">There is an AGM every year, but attendance is below 50 percent or there is no published agenda. </ion-option>
+					<ion-option value="3">There is an AGM every year with at least 50 percent member attendance and there is a published agenda. </ion-option>
+					<ion-option value="4">There is an AGM every year with at least 50 percent member attendance and a published agenda, and women account for a third of the members who attend. </ion-option>
+				</ion-select>
+			</ion-item>
+
+
+			<ion-item>
+				<ion-label floating>Frequency of meetings</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">No formal meetings are being conducted</ion-option>
+					<ion-option value="2">Meetings are conducted very rarely with least involvement of member</ion-option>
+					<ion-option value="3">Meeting are conducted regularly with least involvement of member</ion-option>
+					<ion-option value="4">Regular meeting are conducted with proper involvement and contribution of members as well</ion-option>
+				</ion-select>
+			</ion-item>
+
+
+			<ion-item>
+				<ion-label floating>Annual general meeting (AGM) agenda </ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">AGM does not have a formal agenda. </ion-option>
+					<ion-option value="2">AGM has a published agenda, but it does include all the items listed on the agenda nor are minutes (notes from previous meeting) distributed. </ion-option>
+					<ion-option value="3">AGM has a formal agenda and distributed minutes reflecting the following: board elections, management changes, new member acceptance, requests for services, business plan progress report, accountant/auditor report on financial status and all other items specified in bylaws and operating procedures. </ion-option>
+					<ion-option value="4">AGM has a formal agenda and distributed minutes reflecting the above activities, and minutes are distributed (or explained through regional representatives) to all no attending male and female members. </ion-option>
+				</ion-select>
+			</ion-item>
+
+
+			<ion-item>
+				<ion-label floating>Feedback</ion-label>
+				<ion-select interface="action-sheet">
+					<ion-option value="1">There is no AGM nor is there any formal process for collecting member feedback. </ion-option>
+					<ion-option value="2">There is an AGM but members neither vote for board members or bylaw changes, nor are they asked for comments on operations; there is no other formal process for collecting member feedback. </ion-option>
+					<ion-option value="3">There is an AGM where members vote for board members and bylaw changes; also, members are able to give open‐ended feedback either at the AGM or through regional representatives. </ion-option>
+					<ion-option value="4">There is an AGM where members vote for board members and bylaw changes; members are able to give open‐ended feedback either at the AGM or through regional representatives; the FPO actively solicits member feedback through regional representatives, the supervisory committee or through a defined FPO process. </ion-option>
+				</ion-select>
+			</ion-item>
+
+		</div>
+	</ion-list>
+	
+	<ion-fab top right edge>
+		<button color="secondary" ion-fab>
+			<ion-icon name="checkmark"></ion-icon>
+		</button>
+	</ion-fab>
 </ion-content>
